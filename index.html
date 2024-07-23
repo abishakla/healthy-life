@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1 id="tittle">Sign up</h1>
+            <form >
+                <div class="user" id="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="name" placeholder="username">
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="password">
+                </div>
+
+<p>Forget password <a href="#">Click here</a></p>
+<div class="button" ><button id="signin"> sign in</button>
+<button class="disable" id="signup">Signup</button></div>
+            </form>
+        </div>
+    </div>
+    <script >var user= document.getElementById("user")
+        var tittle= document.getElementById("tittle")
+        var signup= document.getElementById("signup")
+        var signin= document.getElementById("signin")
+        signup.onclick=function(){
+            user.style.maxHeight="0";
+            tittle.innerHTML="signin";
+            signin.classList.add("disable")
+            signin
+        
+        }</script>
+</body>
+</html>
